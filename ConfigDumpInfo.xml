@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
+	<ConfigVersions>
+		<Metadata name="Catalog.Валюты" id="af7c6315-a42d-46fe-aa0e-370c6819f450" configVersion="b73c165de351c04aa4ff2542a457454100000000">
+			<Metadata name="Catalog.Валюты.Attribute.Активна" id="0fbddfdd-db7f-42e5-87c9-d1a355c5f715"/>
+			<Metadata name="Catalog.Валюты.Attribute.КраткоеНаименование" id="d88faf5c-5352-4d9e-a792-a9379f4d2e36"/>
+		</Metadata>
+		<Metadata name="Catalog.Контакты" id="dcbf785f-5875-4599-8e74-ef65010536f0" configVersion="ae8f1c927098f341baed7428072b69b800000000">
+			<Metadata name="Catalog.Контакты.Attribute.Телефон" id="3f808b31-076a-42b6-9b3c-3dec53fc811e"/>
+			<Metadata name="Catalog.Контакты.Attribute.Комментарий" id="6f2308e9-ee05-4ea3-8494-1997278acf04"/>
+			<Metadata name="Catalog.Контакты.Attribute.Электропочта" id="7a40acf3-a257-410b-a6d6-c335326f5229"/>
+			<Metadata name="Catalog.Контакты.Attribute.ДеньРождения" id="7be855f5-3ef3-4511-baa3-430688c42cd5"/>
+			<Metadata name="Catalog.Контакты.Attribute.Адрес" id="96e88f01-137f-439a-91bd-93b88d22c8af"/>
+		</Metadata>
+		<Metadata name="Catalog.Пользователи" id="8b1a21cc-de31-4421-afa7-486e9826f30d" configVersion="c411fe157f319c47928613718c5d64cc00000000"/>
+		<Metadata name="Catalog.СтатьиДоходов" id="3db250a0-65ba-4c74-87b1-8fa4af4c441f" configVersion="fb31f409ced9024eb1146b0e9e0f089900000000">
+			<Metadata name="Catalog.СтатьиДоходов.Attribute.Комментарий" id="423f12c2-cc6f-41f8-a5ba-c5b156a85ded"/>
+			<Metadata name="Catalog.СтатьиДоходов.Attribute.Активна" id="94d2a56c-0909-4670-9bfc-d87cd1352fb0"/>
+		</Metadata>
+		<Metadata name="Catalog.СтатьиРасходов" id="277f4d71-60ba-4c76-bff7-5395e2094205" configVersion="c3ad876d93f8e647926535a8b52f4d9300000000">
+			<Metadata name="Catalog.СтатьиРасходов.Attribute.Комментарий" id="7201329a-73c4-4687-ad8b-94f25d85fa43"/>
+			<Metadata name="Catalog.СтатьиРасходов.Attribute.Активна" id="89a521a7-9bcd-4991-b089-1769b7404d29"/>
+		</Metadata>
+		<Metadata name="Catalog.Счета" id="bfdeaca9-cb13-40cf-9b88-33c7b54fa3f7" configVersion="3e0bce1e4fcc7442abfd6f7f16aab0b800000000">
+			<Metadata name="Catalog.Счета.Attribute.ТипСчета" id="04f06ebc-8e1b-484f-a646-faf2e392efe3"/>
+			<Metadata name="Catalog.Счета.Attribute.Комментарий" id="353c0c36-4b8a-4d9f-93d0-16f9f8e81027"/>
+			<Metadata name="Catalog.Счета.Attribute.Активен" id="43a53a83-c7aa-4e01-ba63-f172ad3b633b"/>
+		</Metadata>
+		<Metadata name="Configuration.МоиДеньги" id="ee4aa359-ab4b-4f00-aaf9-cdf56ce56cfc" configVersion="412df82e8b94104eb8591034e289b26e00000000"/>
+		<Metadata name="Document.Операция" id="ae642e1e-1fa9-4670-892a-7e577bc8557d" configVersion="0d194ef8a859e04daed6d9673f9d92df00000000">
+			<Metadata name="Document.Операция.Attribute.Счет" id="0200c1a9-ca89-4d72-8aed-b7cef8340a93"/>
+			<Metadata name="Document.Операция.TabularSection.ДанныеОперации" id="1d329bae-34f3-431c-855a-a4efc9407023"/>
+			<Metadata name="Document.Операция.TabularSection.ДанныеОперации.Attribute.Примечание" id="63de4899-f627-403f-bf2e-2347c412dea8"/>
+			<Metadata name="Document.Операция.Attribute.Пользователь" id="714b635e-a444-421d-9f1a-ac7bff586912"/>
+			<Metadata name="Document.Операция.Attribute.Активна" id="778e29de-1437-4208-9fab-85fc88989953"/>
+			<Metadata name="Document.Операция.TabularSection.ДанныеОперации.Attribute.Статья" id="7f506b94-7731-4e8e-8294-7f45d8026a3d"/>
+			<Metadata name="Document.Операция.Attribute.ТипОперации" id="81f518b3-89c7-4a79-b481-fc32514f0940"/>
+			<Metadata name="Document.Операция.TabularSection.ДанныеОперации.Attribute.СчетПеремещения" id="8f0d5d5f-06eb-424d-8aa9-00623b9faf00"/>
+			<Metadata name="Document.Операция.Attribute.Комментарий" id="90e6ddc6-ca92-4b3a-89bb-61b04aea9f27"/>
+			<Metadata name="Document.Операция.Attribute.ДатаФакт" id="d96dd771-3046-474d-a49b-357ccd8f03cb"/>
+			<Metadata name="Document.Операция.TabularSection.ДанныеОперации.Attribute.Счет" id="ee7f5df7-2b81-4f68-a5f7-a094eeda6569"/>
+			<Metadata name="Document.Операция.TabularSection.ДанныеОперации.Attribute.Сумма" id="f1040012-87ec-473c-be64-ae11058febc3"/>
+		</Metadata>
+		<Metadata name="Enum.ТипыОпераций" id="796cbaaa-74b8-4c21-8818-c30c2a684347" configVersion="07d7488b2b89a64694a3a9d1ff17ae2700000000">
+			<Metadata name="Enum.ТипыОпераций.EnumValue.Остаток" id="05d880c0-50fc-44e0-a26d-81c2a744215f"/>
+			<Metadata name="Enum.ТипыОпераций.EnumValue.Перевод" id="b2e167c8-9956-48e5-8557-462638af0d1f"/>
+			<Metadata name="Enum.ТипыОпераций.EnumValue.Расход" id="b5d521f8-88bf-4dc2-bb38-168c79c2f55f"/>
+			<Metadata name="Enum.ТипыОпераций.EnumValue.Приход" id="cb80cdb6-9d03-4d38-baa5-bd4a4b17a78c"/>
+		</Metadata>
+		<Metadata name="Enum.ТипыСчетов" id="39ee4143-1f8f-4470-910e-f7b713587238" configVersion="13f4993cfef3834bbb4ead8fd3b7241900000000">
+			<Metadata name="Enum.ТипыСчетов.EnumValue.Наличные" id="3fef85b1-6c71-4047-971a-58b5e7c670e1"/>
+			<Metadata name="Enum.ТипыСчетов.EnumValue.КартаДебетовая" id="44fdb7c3-2390-4ff9-91b1-cd2496b9955f"/>
+			<Metadata name="Enum.ТипыСчетов.EnumValue.ВиртуальныйСчет" id="8ee6cc6d-4b44-43b9-b831-bc8356beea64"/>
+			<Metadata name="Enum.ТипыСчетов.EnumValue.Другое" id="b24ad30b-455c-4601-8b0b-24f3b65a364b"/>
+			<Metadata name="Enum.ТипыСчетов.EnumValue.КартаКредитная" id="de948db2-2d09-453c-bbc1-ba1e29549263"/>
+			<Metadata name="Enum.ТипыСчетов.EnumValue.БанковскийСчет" id="e19cf55b-e151-4505-82eb-c566fdc3f5fb"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="e1104b48-670a-4b63-9ba5-ba19bccfe5bf" configVersion="578051b44f697044bf83855ef3b563d700000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
