@@ -44,7 +44,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Приход</v8:content>
+							<v8:content>Приход денег</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -56,7 +56,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Расход</v8:content>
+							<v8:content>Расход денег</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -68,7 +68,67 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Перевод</v8:content>
+							<v8:content>Перевод между счетами</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="45da252c-d12c-4c2d-8095-3b52d48c287d">
+				<Properties>
+					<Name>ОбменВалюты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен валюты</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6ea17894-e3c1-4bf6-a786-3b9945216385">
+				<Properties>
+					<Name>МыВзялиВДолг</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мы взяли в долг</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f2d02af5-c7d5-4f13-819b-fe4d10ab34f1">
+				<Properties>
+					<Name>МыВернулиДолг</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мы вернули долг</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="51cc8567-64cf-476a-b6b0-367ce7fe771e">
+				<Properties>
+					<Name>МыДалиВДолг</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мы дали в долг</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="60f68b9e-6ca7-4c3d-b789-ffed2599cdfb">
+				<Properties>
+					<Name>НамВернулиДолг</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нам вернули долг</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -76,11 +136,11 @@
 			</EnumValue>
 			<EnumValue uuid="05d880c0-50fc-44e0-a26d-81c2a744215f">
 				<Properties>
-					<Name>Остаток</Name>
+					<Name>ВводОстатка</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Остаток</v8:content>
+							<v8:content>Ввод остатка счета</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

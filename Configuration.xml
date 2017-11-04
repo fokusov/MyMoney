@@ -128,6 +128,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<Catalog>СтатьиДоходов</Catalog>
 			<Catalog>СтатьиРасходов</Catalog>
 			<Catalog>Счета</Catalog>
@@ -137,6 +138,8 @@
 			<Document>Операция</Document>
 			<Enum>ТипыСчетов</Enum>
 			<Enum>ТипыОпераций</Enum>
+			<AccumulationRegister>ДвижениеДенегПоСчетам</AccumulationRegister>
+			<AccumulationRegister>Взаиморасчеты</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
