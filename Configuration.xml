@@ -45,7 +45,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Igor Fokusov</Vendor>
-			<Version>0.0.2</Version>
+			<Version>0.0.5</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -120,8 +120,8 @@
 			<ConfigurationInformationAddress/>
 			<DataLockControlMode>Automatic</DataLockControlMode>
 			<ObjectAutonumerationMode>AutoFree</ObjectAutonumerationMode>
-			<ModalityUseMode>DontUse</ModalityUseMode>
-			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
+			<ModalityUseMode>Use</ModalityUseMode>
+			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 			<CompatibilityMode>Version8_3_10</CompatibilityMode>
 			<DefaultConstantsForm/>
@@ -142,7 +142,9 @@
 			<Document>Операция</Document>
 			<Enum>ТипыСчетов</Enum>
 			<Enum>ТипыОпераций</Enum>
+			<Report>ОтчетДоходыРасходы</Report>
 			<DataProcessor>Бюджет</DataProcessor>
+			<DataProcessor>ЗагрузкаОперацийИзПроверкиЧеков</DataProcessor>
 			<InformationRegister>ПланРасходов</InformationRegister>
 			<AccumulationRegister>ДвижениеДенегПоСчетам</AccumulationRegister>
 			<AccumulationRegister>Взаиморасчеты</AccumulationRegister>

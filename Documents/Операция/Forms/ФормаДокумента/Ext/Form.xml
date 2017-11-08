@@ -5,7 +5,10 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Шапка" id="1">
@@ -39,6 +42,7 @@
 		</UsualGroup>
 		<Table name="ДанныеОперации" id="31">
 			<Representation>List</Representation>
+			<Footer>true</Footer>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -75,6 +79,7 @@
 				<LabelField name="ДанныеОперацииНомерСтроки" id="44">
 					<DataPath>Объект.ДанныеОперации.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.ДанныеОперации.RowsCount</FooterDataPath>
 					<ContextMenu name="ДанныеОперацииНомерСтрокиКонтекстноеМеню" id="45"/>
 					<ExtendedTooltip name="ДанныеОперацииНомерСтрокиРасширеннаяПодсказка" id="46"/>
 				</LabelField>
@@ -96,6 +101,7 @@
 				<InputField name="ДанныеОперацииСумма" id="53">
 					<DataPath>Объект.ДанныеОперации.Сумма</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.ДанныеОперации.TotalСумма</FooterDataPath>
 					<ContextMenu name="ДанныеОперацииСуммаКонтекстноеМеню" id="54"/>
 					<ExtendedTooltip name="ДанныеОперацииСуммаРасширеннаяПодсказка" id="55"/>
 				</InputField>
