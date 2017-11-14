@@ -45,7 +45,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Igor Fokusov</Vendor>
-			<Version>0.0.5</Version>
+			<Version>0.0.7</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -139,13 +139,17 @@
 			<Catalog>Валюты</Catalog>
 			<Catalog>Контакты</Catalog>
 			<Catalog>Пользователи</Catalog>
+			<Catalog>ВнешниеСервисы</Catalog>
 			<Document>Операция</Document>
 			<Enum>ТипыСчетов</Enum>
 			<Enum>ТипыОпераций</Enum>
 			<Report>ОтчетДоходыРасходы</Report>
 			<DataProcessor>Бюджет</DataProcessor>
 			<DataProcessor>ЗагрузкаОперацийИзПроверкиЧеков</DataProcessor>
+			<DataProcessor>ЗагрузкаОперацийИзFinPix</DataProcessor>
 			<InformationRegister>ПланРасходов</InformationRegister>
+			<InformationRegister>ДанныеДляОбмена</InformationRegister>
+			<InformationRegister>СоответствияОбъектов</InformationRegister>
 			<AccumulationRegister>ДвижениеДенегПоСчетам</AccumulationRegister>
 			<AccumulationRegister>Взаиморасчеты</AccumulationRegister>
 		</ChildObjects>

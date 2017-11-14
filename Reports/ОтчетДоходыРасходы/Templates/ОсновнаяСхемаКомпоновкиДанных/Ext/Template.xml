@@ -58,9 +58,11 @@
 	ДвижениеДенегПоСчетамОбороты.СуммаОборот КАК Сумма,
 	ВЫБОР
 		КОГДА ДвижениеДенегПоСчетамОбороты.Статья ССЫЛКА Справочник.СтатьиРасходов
+				И НЕ ДвижениеДенегПоСчетамОбороты.Статья = ЗНАЧЕНИЕ(Справочник.СтатьиРасходов.ПустаяСсылка)
 			ТОГДА "РАСХОДЫ"
 		ИНАЧЕ ВЫБОР
 				КОГДА ДвижениеДенегПоСчетамОбороты.Статья ССЫЛКА Справочник.СтатьиДоходов
+						И НЕ ДвижениеДенегПоСчетамОбороты.Статья = ЗНАЧЕНИЕ(Справочник.СтатьиДоходов.ПустаяСсылка)
 					ТОГДА "ДОХОДЫ"
 				ИНАЧЕ "ПРОЧЕЕ"
 			КОНЕЦ
@@ -200,6 +202,11 @@
 							<dcscor:parameter>Шрифт</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
+						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
 			</dcsset:conditionalAppearance>
@@ -254,6 +261,22 @@
 					<dcsset:selection>
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Сумма</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
 					<dcsset:item>
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">

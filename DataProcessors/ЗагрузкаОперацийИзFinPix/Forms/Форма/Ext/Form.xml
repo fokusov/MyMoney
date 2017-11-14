@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="Сервис" id="30">
+					<DataPath>Объект.Сервис</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервис обмена данными</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СервисКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="СервисРасширеннаяПодсказка" id="32"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДействия" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа действия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа действия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДействияРасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<Button name="ФормаПрочитатьФайл" id="8">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПрочитатьИзменения</CommandName>
+					<ExtendedTooltip name="ФормаПрочитатьФайлРасширеннаяПодсказка" id="9"/>
+				</Button>
+				<Button name="ФормаСформироватьОперации" id="10">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СформироватьОперации</CommandName>
+					<ExtendedTooltip name="ФормаСформироватьОперацииРасширеннаяПодсказка" id="11"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<Page name="СтраницаТранзакции" id="116">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транзакции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница транзакции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаТранзакцииРасширеннаяПодсказка" id="117"/>
+					<ChildItems>
+						<Table name="Транзакции" id="118">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Транзакции</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТранзакцииКонтекстноеМеню" id="119"/>
+							<AutoCommandBar name="ТранзакцииКоманднаяПанель" id="120">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТранзакцииРасширеннаяПодсказка" id="121"/>
+							<SearchStringAddition name="ТранзакцииСтрокаПоиска" id="122">
+								<AdditionSource>
+									<Item>Транзакции</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТранзакцииСтрокаПоискаКонтекстноеМеню" id="123"/>
+								<ExtendedTooltip name="ТранзакцииСтрокаПоискаРасширеннаяПодсказка" id="124"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТранзакцииСостояниеПросмотра" id="125">
+								<AdditionSource>
+									<Item>Транзакции</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТранзакцииСостояниеПросмотраКонтекстноеМеню" id="126"/>
+								<ExtendedTooltip name="ТранзакцииСостояниеПросмотраРасширеннаяПодсказка" id="127"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТранзакцииУправлениеПоиском" id="128">
+								<AdditionSource>
+									<Item>Транзакции</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТранзакцииУправлениеПоискомКонтекстноеМеню" id="129"/>
+								<ExtendedTooltip name="ТранзакцииУправлениеПоискомРасширеннаяПодсказка" id="130"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТранзакцииНомерСтроки" id="131">
+									<DataPath>Объект.Транзакции.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТранзакцииНомерСтрокиКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ТранзакцииНомерСтрокиРасширеннаяПодсказка" id="133"/>
+								</LabelField>
+								<CheckBoxField name="ТранзакцииГрузить" id="158">
+									<DataPath>Объект.Транзакции.Грузить</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТранзакцииГрузитьКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="ТранзакцииГрузитьРасширеннаяПодсказка" id="160"/>
+								</CheckBoxField>
+								<InputField name="ТранзакцииТипОперации" id="161">
+									<DataPath>Объект.Транзакции.ТипОперации</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТранзакцииТипОперацииКонтекстноеМеню" id="162"/>
+									<ExtendedTooltip name="ТранзакцииТипОперацииРасширеннаяПодсказка" id="163"/>
+								</InputField>
+								<InputField name="ТранзакцииНашаСсылка" id="137">
+									<DataPath>Объект.Транзакции.НашаСсылка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТранзакцииНашаСсылкаКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ТранзакцииНашаСсылкаРасширеннаяПодсказка" id="139"/>
+									<Events>
+										<Event name="OnChange">ТранзакцииНашаСсылкаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ТранзакцииДатаВремя" id="140">
+									<DataPath>Объект.Транзакции.ДатаВремя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТранзакцииДатаВремяКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="ТранзакцииДатаВремяРасширеннаяПодсказка" id="142"/>
+								</InputField>
+								<InputField name="ТранзакцииСчет" id="143">
+									<DataPath>Объект.Транзакции.Счет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТранзакцииСчетКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="ТранзакцииСчетРасширеннаяПодсказка" id="145"/>
+								</InputField>
+								<InputField name="ТранзакцииКонтакт" id="146">
+									<DataPath>Объект.Транзакции.Контакт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТранзакцииКонтактКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="ТранзакцииКонтактРасширеннаяПодсказка" id="148"/>
+								</InputField>
+								<InputField name="ТранзакцииСтатья" id="149">
+									<DataPath>Объект.Транзакции.Статья</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТранзакцииСтатьяКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="ТранзакцииСтатьяРасширеннаяПодсказка" id="151"/>
+								</InputField>
+								<InputField name="ТранзакцииСумма" id="152">
+									<DataPath>Объект.Транзакции.Сумма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТранзакцииСуммаКонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="ТранзакцииСуммаРасширеннаяПодсказка" id="154"/>
+								</InputField>
+								<InputField name="ТранзакцииПримечание" id="155">
+									<DataPath>Объект.Транзакции.Примечание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТранзакцииПримечаниеКонтекстноеМеню" id="156"/>
+									<ExtendedTooltip name="ТранзакцииПримечаниеРасширеннаяПодсказка" id="157"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаКонтакты" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контакты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница контакты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаКонтактыРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<Table name="Контакты" id="37">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Контакты</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КонтактыКонтекстноеМеню" id="38"/>
+							<AutoCommandBar name="КонтактыКоманднаяПанель" id="39">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="КонтактыРасширеннаяПодсказка" id="40"/>
+							<SearchStringAddition name="КонтактыСтрокаПоиска" id="41">
+								<AdditionSource>
+									<Item>Контакты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КонтактыСтрокаПоискаКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="КонтактыСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КонтактыСостояниеПросмотра" id="44">
+								<AdditionSource>
+									<Item>Контакты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КонтактыСостояниеПросмотраКонтекстноеМеню" id="45"/>
+								<ExtendedTooltip name="КонтактыСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КонтактыУправлениеПоиском" id="47">
+								<AdditionSource>
+									<Item>Контакты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КонтактыУправлениеПоискомКонтекстноеМеню" id="48"/>
+								<ExtendedTooltip name="КонтактыУправлениеПоискомРасширеннаяПодсказка" id="49"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="КонтактыНомерСтроки" id="50">
+									<DataPath>Объект.Контакты.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КонтактыНомерСтрокиКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="КонтактыНомерСтрокиРасширеннаяПодсказка" id="52"/>
+								</LabelField>
+								<InputField name="КонтактыНаименование" id="56">
+									<DataPath>Объект.Контакты.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КонтактыНаименованиеКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="КонтактыНаименованиеРасширеннаяПодсказка" id="58"/>
+								</InputField>
+								<InputField name="КонтактыНашаСсылка" id="59">
+									<DataPath>Объект.Контакты.НашаСсылка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КонтактыНашаСсылкаКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="КонтактыНашаСсылкаРасширеннаяПодсказка" id="61"/>
+									<Events>
+										<Event name="OnChange">КонтактыНашаСсылкаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаКатегорий" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Категории</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница категорий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаКатегорийРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<Table name="Категории" id="64">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Категории</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КатегорииКонтекстноеМеню" id="65"/>
+							<AutoCommandBar name="КатегорииКоманднаяПанель" id="66">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="КатегорииРасширеннаяПодсказка" id="67"/>
+							<SearchStringAddition name="КатегорииСтрокаПоиска" id="68">
+								<AdditionSource>
+									<Item>Категории</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КатегорииСтрокаПоискаКонтекстноеМеню" id="69"/>
+								<ExtendedTooltip name="КатегорииСтрокаПоискаРасширеннаяПодсказка" id="70"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КатегорииСостояниеПросмотра" id="71">
+								<AdditionSource>
+									<Item>Категории</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КатегорииСостояниеПросмотраКонтекстноеМеню" id="72"/>
+								<ExtendedTooltip name="КатегорииСостояниеПросмотраРасширеннаяПодсказка" id="73"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КатегорииУправлениеПоиском" id="74">
+								<AdditionSource>
+									<Item>Категории</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КатегорииУправлениеПоискомКонтекстноеМеню" id="75"/>
+								<ExtendedTooltip name="КатегорииУправлениеПоискомРасширеннаяПодсказка" id="76"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="КатегорииНомерСтроки" id="77">
+									<DataPath>Объект.Категории.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КатегорииНомерСтрокиКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="КатегорииНомерСтрокиРасширеннаяПодсказка" id="79"/>
+								</LabelField>
+								<InputField name="КатегорииНаименование" id="83">
+									<DataPath>Объект.Категории.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КатегорииНаименованиеКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="КатегорииНаименованиеРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="КатегорииНашаСсылка" id="86">
+									<DataPath>Объект.Категории.НашаСсылка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КатегорииНашаСсылкаКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="КатегорииНашаСсылкаРасширеннаяПодсказка" id="88"/>
+									<Events>
+										<Event name="OnChange">КатегорииНашаСсылкаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСчета" id="89">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счета</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница счета</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаСчетаРасширеннаяПодсказка" id="90"/>
+					<ChildItems>
+						<Table name="Счета" id="91">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Счета</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СчетаКонтекстноеМеню" id="92"/>
+							<AutoCommandBar name="СчетаКоманднаяПанель" id="93">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СчетаРасширеннаяПодсказка" id="94"/>
+							<SearchStringAddition name="СчетаСтрокаПоиска" id="95">
+								<AdditionSource>
+									<Item>Счета</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СчетаСтрокаПоискаКонтекстноеМеню" id="96"/>
+								<ExtendedTooltip name="СчетаСтрокаПоискаРасширеннаяПодсказка" id="97"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СчетаСостояниеПросмотра" id="98">
+								<AdditionSource>
+									<Item>Счета</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СчетаСостояниеПросмотраКонтекстноеМеню" id="99"/>
+								<ExtendedTooltip name="СчетаСостояниеПросмотраРасширеннаяПодсказка" id="100"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СчетаУправлениеПоиском" id="101">
+								<AdditionSource>
+									<Item>Счета</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СчетаУправлениеПоискомКонтекстноеМеню" id="102"/>
+								<ExtendedTooltip name="СчетаУправлениеПоискомРасширеннаяПодсказка" id="103"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СчетаНомерСтроки" id="104">
+									<DataPath>Объект.Счета.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СчетаНомерСтрокиКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="СчетаНомерСтрокиРасширеннаяПодсказка" id="106"/>
+								</LabelField>
+								<InputField name="СчетаНаименование" id="110">
+									<DataPath>Объект.Счета.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СчетаНаименованиеКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="СчетаНаименованиеРасширеннаяПодсказка" id="112"/>
+								</InputField>
+								<InputField name="СчетаНашаСсылка" id="113">
+									<DataPath>Объект.Счета.НашаСсылка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СчетаНашаСсылкаКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="СчетаНашаСсылкаРасширеннаяПодсказка" id="115"/>
+									<Events>
+										<Event name="OnChange">СчетаНашаСсылкаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаОперацийИзFinPix</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.Сервис</Field>
+				<Field>1/0:f8b7f0aa-2d9c-46e6-bab6-1a0642e69416</Field>
+				<Field>1/0:3b1fc6f0-e8e3-4e09-881c-3aa953a0798b</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрочитатьИзменения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать изменения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПрочитатьФайл</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СформироватьОперации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать операции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СформироватьОперации</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

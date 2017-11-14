@@ -5,6 +5,7 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 	</Events>
 	<ChildItems>
@@ -57,6 +58,7 @@
 							<v8:content>Группа дерево</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДеревоРасширеннаяПодсказка" id="15"/>
@@ -173,6 +175,127 @@
 								</InputField>
 							</ChildItems>
 						</Table>
+						<UsualGroup name="ГруппаНиз2" id="183">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа низ2</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа низ2</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНиз2РасширеннаяПодсказка" id="184"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДанныеСтатьи" id="44">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Информация:</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Collapsed>true</Collapsed>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<Representation>StrongSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДанныеСтатьиРасширеннаяПодсказка" id="45"/>
+									<ChildItems>
+										<LabelField name="ТекСтатья" id="46">
+											<DataPath>ТекСтатья</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+											</Border>
+											<Font height="12" bold="true" kind="AutoFont"/>
+											<ContextMenu name="ТекСтатьяКонтекстноеМеню" id="47"/>
+											<ExtendedTooltip name="ТекСтатьяРасширеннаяПодсказка" id="48"/>
+										</LabelField>
+										<LabelField name="НачОстатокПоСтатье" id="113">
+											<DataPath>НачОстатокПоСтатье</DataPath>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧЦ=15; ЧДЦ=2; ЧН=0,00</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="НачОстатокПоСтатьеКонтекстноеМеню" id="114"/>
+											<ExtendedTooltip name="НачОстатокПоСтатьеРасширеннаяПодсказка" id="115"/>
+										</LabelField>
+										<LabelField name="РаспределеноПоСтатье" id="116">
+											<DataPath>РаспределеноПоСтатье</DataPath>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧЦ=15; ЧДЦ=2; ЧН=0,00</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="РаспределеноПоСтатьеКонтекстноеМеню" id="117"/>
+											<ExtendedTooltip name="РаспределеноПоСтатьеРасширеннаяПодсказка" id="118"/>
+										</LabelField>
+										<LabelField name="ВсегоПоСтатье" id="119">
+											<DataPath>ВсегоПоСтатье</DataPath>
+											<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧЦ=15; ЧДЦ=2; ЧН=0,00</v8:content>
+												</v8:item>
+											</Format>
+											<Font bold="true" kind="AutoFont"/>
+											<ContextMenu name="ВсегоПоСтатьеКонтекстноеМеню" id="120"/>
+											<ExtendedTooltip name="ВсегоПоСтатьеРасширеннаяПодсказка" id="121"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСвободныеДС" id="122">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расчет на день</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>style:FormTextColor</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Group>Vertical</Group>
+									<Collapsed>true</Collapsed>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="ГруппаСвободныеДСРасширеннаяПодсказка" id="123"/>
+									<ChildItems>
+										<LabelField name="БюджетПоСтатьеНаДень" id="127">
+											<DataPath>БюджетПоСтатьеНаДень</DataPath>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧЦ=15; ЧДЦ=2; ЧН=0,00</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="БюджетПоСтатьеНаДеньКонтекстноеМеню" id="128"/>
+											<ExtendedTooltip name="БюджетПоСтатьеНаДеньРасширеннаяПодсказка" id="129"/>
+										</LabelField>
+										<LabelField name="БюджетНаДень" id="124">
+											<DataPath>ОбщийБюджетНаДень</DataPath>
+											<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧЦ=15; ЧДЦ=2; ЧН=0,00</v8:content>
+												</v8:item>
+											</Format>
+											<Font bold="true" kind="AutoFont"/>
+											<ContextMenu name="БюджетНаДеньКонтекстноеМеню" id="125"/>
+											<ExtendedTooltip name="БюджетНаДеньРасширеннаяПодсказка" id="126"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаДанные" id="16">
@@ -216,7 +339,7 @@
 									<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="107"/>
 								</Button>
 								<LabelDecoration name="Декорация1" id="136">
-									<Width>3</Width>
+									<Width>2</Width>
 									<ContextMenu name="Декорация1КонтекстноеМеню" id="137"/>
 									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="138"/>
 								</LabelDecoration>
@@ -250,113 +373,39 @@
 						</UsualGroup>
 						<LabelField name="НачОстатокОбщий" id="133">
 							<DataPath>НачОстатокОбщий</DataPath>
+							<TitleFont ref="style:NormalTextFont" height="10" kind="StyleItem"/>
 							<Width>15</Width>
-							<Font height="16" bold="true" kind="AutoFont"/>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧЦ=15; ЧДЦ=2; ЧН=0,00</v8:content>
+								</v8:item>
+							</Format>
+							<Font ref="style:NormalTextFont" height="16" bold="true" kind="StyleItem"/>
 							<ContextMenu name="НачОстатокОбщийКонтекстноеМеню" id="134"/>
 							<ExtendedTooltip name="НачОстатокОбщийРасширеннаяПодсказка" id="135"/>
 						</LabelField>
-						<UsualGroup name="ГруппаДоходы" id="108">
+						<LabelField name="ДоходовКРаспределению" id="110">
+							<DataPath>ДоходовКРаспределению</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Не распределено:</v8:content>
+									<v8:content>Осталось распределить</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа доходы</v8:content>
-								</v8:item>
-							</ToolTip>
+							<TitleFont ref="style:NormalTextFont" height="10" kind="StyleItem"/>
 							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
-							<Group>Vertical</Group>
-							<ExtendedTooltip name="ГруппаДоходыРасширеннаяПодсказка" id="109"/>
-							<ChildItems>
-								<LabelField name="ДоходовКРаспределению" id="110">
-									<DataPath>ДоходовКРаспределению</DataPath>
-									<TitleFont ref="style:NormalTextFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-									<TitleLocation>None</TitleLocation>
-									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
-									<Width>15</Width>
-									<Format>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>ЧЦ=15; ЧДЦ=2; ЧН=0,00</v8:content>
-										</v8:item>
-									</Format>
-									<Font height="16" bold="true" kind="AutoFont"/>
-									<ContextMenu name="ДоходовКРаспределениюКонтекстноеМеню" id="111"/>
-									<ExtendedTooltip name="ДоходовКРаспределениюРасширеннаяПодсказка" id="112"/>
-								</LabelField>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаДанныеСтатьи" id="44">
-							<Title>
+							<Width>15</Width>
+							<Format>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Информация:</v8:content>
+									<v8:content>ЧЦ=15; ЧДЦ=2; ЧН=0,00</v8:content>
 								</v8:item>
-							</Title>
-							<Group>Vertical</Group>
-							<Behavior>Collapsible</Behavior>
-							<Collapsed>true</Collapsed>
-							<ControlRepresentation>Picture</ControlRepresentation>
-							<ExtendedTooltip name="ГруппаДанныеСтатьиРасширеннаяПодсказка" id="45"/>
-							<ChildItems>
-								<LabelField name="ТекСтатья" id="46">
-									<DataPath>ТекСтатья</DataPath>
-									<TitleLocation>None</TitleLocation>
-									<Border width="1">
-										<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
-									</Border>
-									<Font height="14" bold="true" kind="AutoFont"/>
-									<ContextMenu name="ТекСтатьяКонтекстноеМеню" id="47"/>
-									<ExtendedTooltip name="ТекСтатьяРасширеннаяПодсказка" id="48"/>
-								</LabelField>
-								<LabelField name="НачОстатокПоСтатье" id="113">
-									<DataPath>НачОстатокПоСтатье</DataPath>
-									<ContextMenu name="НачОстатокПоСтатьеКонтекстноеМеню" id="114"/>
-									<ExtendedTooltip name="НачОстатокПоСтатьеРасширеннаяПодсказка" id="115"/>
-								</LabelField>
-								<LabelField name="РаспределеноПоСтатье" id="116">
-									<DataPath>РаспределеноПоСтатье</DataPath>
-									<ContextMenu name="РаспределеноПоСтатьеКонтекстноеМеню" id="117"/>
-									<ExtendedTooltip name="РаспределеноПоСтатьеРасширеннаяПодсказка" id="118"/>
-								</LabelField>
-								<LabelField name="ВсегоПоСтатье" id="119">
-									<DataPath>ВсегоПоСтатье</DataPath>
-									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-									<Font bold="true" kind="AutoFont"/>
-									<ContextMenu name="ВсегоПоСтатьеКонтекстноеМеню" id="120"/>
-									<ExtendedTooltip name="ВсегоПоСтатьеРасширеннаяПодсказка" id="121"/>
-								</LabelField>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаСвободныеДС" id="122">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Расчет на день:</v8:content>
-								</v8:item>
-							</Title>
-							<Group>Vertical</Group>
-							<Behavior>Collapsible</Behavior>
-							<Collapsed>true</Collapsed>
-							<ControlRepresentation>Picture</ControlRepresentation>
-							<ExtendedTooltip name="ГруппаСвободныеДСРасширеннаяПодсказка" id="123"/>
-							<ChildItems>
-								<LabelField name="БюджетПоСтатьеНаДень" id="127">
-									<DataPath>БюджетПоСтатьеНаДень</DataPath>
-									<ContextMenu name="БюджетПоСтатьеНаДеньКонтекстноеМеню" id="128"/>
-									<ExtendedTooltip name="БюджетПоСтатьеНаДеньРасширеннаяПодсказка" id="129"/>
-								</LabelField>
-								<LabelField name="БюджетНаДень" id="124">
-									<DataPath>ОбщийБюджетНаДень</DataPath>
-									<ContextMenu name="БюджетНаДеньКонтекстноеМеню" id="125"/>
-									<ExtendedTooltip name="БюджетНаДеньРасширеннаяПодсказка" id="126"/>
-								</LabelField>
-							</ChildItems>
-						</UsualGroup>
+							</Format>
+							<Font ref="style:NormalTextFont" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="ДоходовКРаспределениюКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="ДоходовКРаспределениюРасширеннаяПодсказка" id="112"/>
+						</LabelField>
 						<UsualGroup name="ГруппаСчета" id="139">
 							<Title>
 								<v8:item>
@@ -370,7 +419,6 @@
 									<v8:content>Группа счета</v8:content>
 								</v8:item>
 							</ToolTip>
-							<Behavior>Collapsible</Behavior>
 							<ControlRepresentation>Picture</ControlRepresentation>
 							<ExtendedTooltip name="ГруппаСчетаРасширеннаяПодсказка" id="140"/>
 							<ChildItems>
@@ -379,7 +427,6 @@
 									<ReadOnly>true</ReadOnly>
 									<ChangeRowSet>false</ChangeRowSet>
 									<ChangeRowOrder>false</ChangeRowOrder>
-									<HeightInTableRows>7</HeightInTableRows>
 									<Header>false</Header>
 									<InitialTreeView>ExpandAllLevels</InitialTreeView>
 									<EnableStartDrag>true</EnableStartDrag>
@@ -454,7 +501,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Долги</v8:content>
+									<v8:content>Список долгов</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
@@ -463,7 +510,6 @@
 									<v8:content>Группа долги</v8:content>
 								</v8:item>
 							</ToolTip>
-							<Behavior>Collapsible</Behavior>
 							<ControlRepresentation>Picture</ControlRepresentation>
 							<ExtendedTooltip name="ГруппаДолгиРасширеннаяПодсказка" id="161"/>
 							<ChildItems>
@@ -472,7 +518,7 @@
 									<ReadOnly>true</ReadOnly>
 									<ChangeRowSet>false</ChangeRowSet>
 									<ChangeRowOrder>false</ChangeRowOrder>
-									<HeightInTableRows>5</HeightInTableRows>
+									<HeightInTableRows>6</HeightInTableRows>
 									<Header>false</Header>
 									<InitialTreeView>ExpandAllLevels</InitialTreeView>
 									<DataPath>ТаблицаДолги</DataPath>
@@ -759,7 +805,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Общий бюджет на день</v8:content>
+					<v8:content>Общая сумма на день</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -791,7 +837,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Остаток прошлого периода</v8:content>
+					<v8:content>Баланс прошлого периода</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
