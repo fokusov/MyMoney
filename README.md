@@ -26,5 +26,4 @@
 # Контакты
 
 Если разработка вас заинтересовала, пишите пожелания/замечания в issues, либо:\
-e-mail: [igor@fokusov.com](mailto:igor@fokusov.com) \
-telegram: [@ighar](https://t.me/ighar)
+e-mail: [igor@fokusov.com](mailto:igor@fokusov.com) 
